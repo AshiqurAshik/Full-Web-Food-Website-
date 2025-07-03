@@ -1,0 +1,127 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 5px;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+}
+
+.items{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.items a{
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.items a:hover{
+  color: whitesmoke;
+  background-color: orangered;
+  border-radius: 20px;
+}
+
+.items button{
+  padding: 20px 30px;
+  font-size: 1.1rem;
+  border: 1px solid orangered;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.items button:hover{
+  background-color: orangered;
+  color: whitesmoke;
+}
+
+/* ****Page-1******* */
+
+.page1{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/h1_hero.png);
+  background-size: cover;
+  justify-content: center;
+}
+
+.text{
+  width: 60%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+ h4{
+  color: orangered;
+}
+
+.text h1, .text2 h1{
+  font-size: 5rem;
+}
+
+.text p, .text2 p{
+  color: #333;
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.text button{
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: orangered;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.text button:hover{
+  background-color: transparent;
+  border: 5px solid orangered;
+  color: orangered;
+}
+
+.page2{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.text2{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.quality{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-left: 40px;
+}
+
+.quality p{
+  width: 60%;
+}
