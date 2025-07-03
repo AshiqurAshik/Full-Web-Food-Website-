@@ -74,17 +74,17 @@ header{
   color: orangered;
 }
 
-.text h1, .text2 h1{
+.text h1, .text2 h1, .text3 h1, .text4 h1{
   font-size: 5rem;
 }
 
-.text p, .text2 p{
+.text p, .text2 p, .text3 p{
   color: #333;
   font-size: 1.2rem;
   width: 90%;
 }
 
-.text button{
+.text button, .booked button{
   height: 50px;
   width: 200px;
   border: none;
@@ -95,21 +95,23 @@ header{
   transition: 0.3s;
 }
 
-.text button:hover{
+.text button:hover, .booked button:hover{
   background-color: transparent;
   border: 5px solid orangered;
   color: orangered;
 }
 
+/* ****Page-2******* */
+
 .page2{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
 }
 
-.text2{
+.text2, .text3{
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -125,3 +127,128 @@ header{
 .quality p{
   width: 60%;
 }
+
+/* ****Page-3******* */
+
+.page3{
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.text3{
+  margin-left: 10%;
+}
+
+.text3 button{
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.text3 button:hover{
+  background-color: orangered;
+  color: whitesmoke;
+}
+
+/* ****Page-4******* */
+
+.page4{
+  height: 100vh;
+  background-image: url(images/section_bg04.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booked{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  gap: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 100px 150px;
+}
+
+.text4 h4{
+  text-align: center;
+}
+
+.booked input, .booked select{
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: #f5f5f5;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+/* ******Page-5********** */
+
+.page5{
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text5{
+  margin-bottom: 100px;
+}
+
+.text5 h4{
+  text-align: center;
+}
+
+ .text5 h1{
+  font-size: 3rem;
+ }
+
+.quality{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.box{
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 5px ;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.box i{
+  font-size: 1.5rem;
+}
+
+.box p{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.box:hover{
+  background-color: orangered;
+  color: whitesmoke;
+}
+
+/* ******Page-6********** */
